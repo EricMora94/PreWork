@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card{
+    width: 600px;
+    background-color: #666;
+    border: 1px solid black;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.title{
+    color: aqua;
+}
+
+.buttonsContainer {
+    display: flex;
+    grid-auto-flow: column;
+    grid-column-gap: 10%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.counter{
+    color: aqua;
+    font-size: large;
+}
+
+
+.buttons {
+    width: 200px;
+    height: 40px;
+    border-radius: 14px;
+    color: aqua;
+    background: black;
+    border-color: aquamarine;
+}
+
+.buttons:hover {
+    background-color: aqua;
+    color: black;
+    border-color: black;
+}
+
+.buttons:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.helper{
+    color: transparent;
+}
