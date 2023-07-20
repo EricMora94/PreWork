@@ -1,0 +1,75 @@
+1What is the purpose of the Feature Branch Workflow in Git?
+It have various purpose. Starting with the isolation, it allows to work on multiple features at the same time. Avoiding 
+affect the others developers work, and avoid afecting the workflow on the main branch. 
+Having a feature branch workflow allows to track versions and releases.
+We can collaborate with our team working in diferents features and mergin it to testing, avoid affecting their work.
+
+2How do you set up a new Git repository for your project?
+First of all, install git. You can do it via instalation software or via terminal.
+Then with git init you can start a git repository on your pc.
+
+3What is the main branch in the Feature Branch Workflow?
+Is the primary branch of the proyect, from it all the work flow starts, the feature branch are created from it.
+It contains the production code of the proyect. Thats why we create separeted branch to work on it, because we cant make changes
+or introduce bugs to the main branch.
+
+4How do you create a new branch for a specific feature or task?
+You use the command
+    git branch "branch name" 
+
+5How do you switch to a different branch in Git?
+with the command 
+    git checkout "branch name"
+
+6How do you make changes and track your progress in the feature branch?
+with the commands
+    git add <file>
+to add the files that you make a change, then with the command
+    git commit -m "commit message"
+to write a simple idea of what changes you made, and finally with  
+    git log 
+you can see the changes you made
+
+7How do you merge a feature branch into the main branch?
+with the command
+git merge "branch name"
+
+8What should you do if there are merge conflicts during the merge process?
+Firt git show you the files where are the conflicts. Then using a editor like VSC, fix it manually and test the changes that you made and the
+features that are afected. Then, add it with git add <files> and push it. To avoid this problems first pull the changes and keep actualized your
+branch with the main branch.
+
+9Why is it important to test the merged codebase after completing the merge?
+To review if our changes doesnt affect the software
+
+10What are some additional challenges you can undertake to enhance your understanding of the Feature Branch Workflow?
+You can train with some merge errors, work with git in all of your proyects to keep it profesionally.
+
+11How do you delete a feature branch after merging it into the main branch?
+with the command
+git branch -d "<branch name>"
+
+12What is the purpose of code reviews in the Feature Branch Workflow?
+To keep th code clean, identify bugs and defects on the code. Make the codebase coherent and easier to maintain. 
+To promote best practices and the patterns that line our proyect, and reduce technical debt. The code reviews also help the new teammates 
+to learn and grow with good practices for a better code.
+
+13How do you push your feature branch to a remote repository?
+with the comman 
+    git push -u origin <branch name>
+
+14What is the recommended approach for naming feature branches in the Feature Branch Workflow?
+with the sintaxis 
+    feature/branch-name
+
+15How can you keep your feature branch up to date with the latest changes from the main branch?
+    with the commands  
+        git fetch
+    to check if there are new changes on the branches, then with
+        git pull 
+    you recive the new changes, if there are some, and then merge it to our feature branch with
+        git merge main
+    remember to stage our changes to avoid a merging error using the command
+        git stash .
+    and retriving with
+        git stash pop
