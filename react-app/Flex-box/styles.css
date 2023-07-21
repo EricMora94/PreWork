@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: gray;
+    flex-direction: row;
+}
+
+
+
+.avatar {
+    border-radius: 75px;
+    height: 100px;
+}
+
+.storeName {
+    font-size: large;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: medium;
+    padding: 15px 15px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    align-self: center;
+    flex-direction: row;
+}
+
+.bicycle {
+    border-radius: 14px;
+    border: solid 3px gray;
+    vertical-align: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 15px;
+    background-color: gray;
+    flex-direction: row;
+}
+
+.footerText {
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
